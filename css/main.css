@@ -52,11 +52,27 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -527,6 +543,12 @@ span.header-nav__logo--color {
 .functions {
   padding-top: 0;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .functions {
+    display: none;
+  }
 }
 
 .funct__container {
