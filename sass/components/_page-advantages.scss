@@ -26,13 +26,13 @@
     margin-right: 0;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
-    justify-content: space-between;
+    width: calc(100% / 4 - 30px);
     margin-right: 30px;
-    &:nth-child(4n) {
-    margin-right: 0px;
+    margin-bottom: 0px;
+    &:nth-child(4n) { 
+    margin-right: 0;
   }
-}
+  }
 }
 
 .advant-class {
