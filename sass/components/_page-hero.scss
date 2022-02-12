@@ -6,15 +6,58 @@
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
+  /*max-width: 1600px;*/
   min-height: 120px;
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-    ), url("../images/bcground.jpg");
+    rgba(47, 48, 58, 0.4),
+  ),
+    url("../images/hero-mob-x1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4),
+  ),
+    url("../images/hero-mob-x2.jpg");
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4),
+  ),
+    url("../images/hero-tab-x1.jpg");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4),
+        ),
+          url("../images/hero-tab-x2.jpg");
+        }
+  }
+        @media screen and (min-width: 1200px) {
+            background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4),
+            ),
+              url("../images/hero-desk-x1.jpg");
+              @media (min-device-pixel-ratio: 2),
+              (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
+                background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4),
+              ),
+                url("../images/hero-desk-x2.jpg");
+              }
+              }
 }
 .hero__container {
   display: block;
@@ -24,8 +67,8 @@ display: block;
 font-family: inherit;
 font-style: normal;
 font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+font-size: 26px;
+line-height: 1,61;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -33,6 +76,10 @@ color: $btn-color;
 max-width: 696px;
 margin-left: auto;
 margin-right: auto;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__btn {
 min-width: 200px;

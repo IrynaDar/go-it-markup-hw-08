@@ -18,18 +18,29 @@
   margin-bottom: 50px;
 }
 .clients-list {
+  display: flex;
   flex-wrap: wrap;
 }
 
 .clients-list__item {
   @media screen and (max-width: 767px) {
       flex-basis: calc(100% / 2 - 30px);
+      &:nth-child(n+5) {
       margin-bottom: 30px;
+    }
+      &:nth-child(2n) {
+      margin-right: 30px;
+    }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-basis: calc(100% / 3 - 30px);
+      &:nth-child(n+4) {
       margin-bottom: 30px;
+    }
+      &:nth-child(3n) {
+      margin-right: 30px;
+    }
     }
 
     @media screen and (min-width: 1200px) {
