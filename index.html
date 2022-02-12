@@ -13,11 +13,12 @@
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css"/>
+    <script src="js/mobile-menu.js"></script>
 </head>
 <body>
     <!--шапка сайта-->
     <header class="header">
-            <div class="container container__header">
+            <!-- <div class="container container__header">
             <nav class="header-nav">
                 <a class="link logo header-nav__logo" href="">Web<span class="header-nav__logo--color">Studio</span></a>
                 <ul class="list header-list">
@@ -39,9 +40,15 @@
                         </svg> +38 099 111 11 11</a>
                 </li>
             </ul>
-            </div>
-        </header>
-        <!--герой-->
+            </div> -->
+        <a class="link logo header-nav__logo" href="">Web<span class="header-nav__logo--color">Studio</span></a>
+        <div class="burger-menu" id="burgerMenu" onclick="open-menu">
+            <svg class="advant-class__icon--menu-open" height="26" width="24">
+                <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+            </svg>
+        </div>
+    </header>
+        <!--герой---->
             <section class="hero">
             <div class="container hero__container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -145,7 +152,7 @@
                     ./images/demianenko-tab-x1.jpg  1x,
                     ./images/demianenko-tab-x2.jpg  2x
                     " 
-                    media="(min-width:468px) (max-width: 1199px)" 
+                    media="(min-width:768px) (max-width: 1199px)" 
                     />
                     <source
                     srcset="
@@ -401,6 +408,7 @@
     <!--футер-->
     <footer class="footer">
         <div class="container footer__container">
+            <div class="footer-wrapper-section">
             <div class="footer-continfo">
         <a class=" link logo footer__logo" href="">Web<span class="footer__logo--color">Studio</span></a>
         <address class="footer-continfo__address">
@@ -443,6 +451,7 @@
                         </a>
                     </li>
                 </ul>
+            </div>
             </div>
             <form action="#" class="footer-form">
                 <label class="footer-form__label" for="user-email">Подпишитесь на рассылку</label>
