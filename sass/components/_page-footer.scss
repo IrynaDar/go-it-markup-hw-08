@@ -5,10 +5,12 @@
 }
 
 .footer__container {
-  /*display: flex;*/
-  /*align-items: baseline;*/
   display: block;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 span.footer__logo--color {
   color: $btn-color;
@@ -61,7 +63,7 @@ span.footer__logo--color {
   max-width: 231px;
 }
 .socials {
-  display: inline-block;
+  display: block;
   max-width: 206px;
   margin-left: 70px;
 }
@@ -95,7 +97,7 @@ background-color: $accent-color;
 }
 
 .footer-form {
-  display: block;
+  /*display: block;*/
   margin-left: 93px;
 }
 .footer-form__label {
@@ -111,7 +113,7 @@ background-color: $accent-color;
 .footer-form__block {
   /*display: flex;*/
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-top: 20px;
 }
 .footer-form__input {
