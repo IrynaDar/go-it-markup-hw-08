@@ -58,6 +58,10 @@
   /*font-size: 36px;*/
   /*line-height: 1.16;*/
 }
+.team-item__photo {
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+}}
 .team-item__member {
   font-family: inherit;
   font-weight: 500;
