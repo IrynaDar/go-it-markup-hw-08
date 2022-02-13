@@ -63,9 +63,9 @@ ul {
   /*align-items: center;*/
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -849,6 +849,12 @@ span.footer__logo--color {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    text-align: left;
+  }
+}
+
 .footer-list__address {
   margin-top: 20px;
 }
@@ -904,7 +910,7 @@ span.footer__logo--color {
 
 @media screen and (min-width: 1200px) {
   .footer-continfo {
-    text-align: left;
+    display: block;
   }
 }
 
@@ -926,6 +932,7 @@ span.footer__logo--color {
 
 @media screen and (min-width: 1200px) {
   .socials {
+    display: inline-block;
     margin: 0;
   }
 }
@@ -969,10 +976,8 @@ span.footer__logo--color {
 
 @media screen and (min-width: 1200px) {
   .footer-form {
-    display: flex;
-    max-width: 358px;
-    flex-direction: row;
-    justify-content: space-around;
+    display: block;
+    margin-left: 93px;
   }
 }
 
@@ -991,7 +996,15 @@ span.footer__logo--color {
   text-align: center;
 }
 
-.footer-form__input {
+@media screen and (min-width: 1200px) {
+  .footer-form__block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+.footer-form__block .footer-form__input {
   margin: 20px 0;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1013,8 +1026,14 @@ span.footer__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form__input:hover::placeholder, .footer-form__input:focus::placeholder {
+.footer-form__block .footer-form__input:hover::placeholder, .footer-form__block .footer-form__input:focus::placeholder {
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__block .footer-form__input {
+    margin-right: 12px;
+  }
 }
 
 .footer-form__button {

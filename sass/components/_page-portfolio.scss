@@ -1,11 +1,16 @@
 .portfolio-info {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 }
 .portfolio__container {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 .main-btn {
   font: inherit;
@@ -33,8 +38,9 @@
 }
 .button-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  /*margin-bottom: 50px;*/
+  /*justify-content: center;*/
 }
 .btn-top:not(:last-child) {
   margin-right: 8px;

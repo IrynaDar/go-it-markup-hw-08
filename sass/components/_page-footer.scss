@@ -20,6 +20,9 @@ span.footer__logo--color {
 .footer-list {
   font-style: normal;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-list__address {
   margin-top: 20px;
@@ -60,13 +63,17 @@ span.footer__logo--color {
   text-transform: uppercase;
   color: $btn-color;
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-continfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 1200px) {
-    text-align: left;
+    display: block;
   }
 }
 .footer-continfo__address {
@@ -80,7 +87,10 @@ span.footer__logo--color {
     margin: 0;
   }
   @media screen and (min-width: 1200px) {
+    display: inline-block;
     margin: 0;
+    max-width: 206px;
+    margin-left: 70px;
 }
 }
 .socials-list {
@@ -107,12 +117,6 @@ span.footer__logo--color {
   }
 }
 
-// .socials-list__link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
 .socials-list__icon {
   fill: $btn-color;
 }
@@ -123,10 +127,8 @@ span.footer__logo--color {
   flex-direction: column;
   align-items: center;
   @media screen and (min-width: 1200px) {
-    display: flex;
-    max-width: 358px;
-    flex-direction: row;
-    justify-content: space-around;
+    display: block;
+    margin-left: 93px;
 }
 }
 .footer-form__label {
@@ -141,6 +143,10 @@ span.footer__logo--color {
 }
 .footer-form__block {
   text-align: center;
+  @media screen and (min-width:1200px) {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 .footer-form__input {
   margin: 20px 0;
@@ -165,6 +171,9 @@ span.footer__logo--color {
   &:hover::placeholder,
   &:focus::placeholder {
     color: $accent-color;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
   }
 }
 .footer-form__button {

@@ -7,6 +7,33 @@
   align-items: center;
   flex-direction: row;
 }
+.header-nav {
+  display: none;
+}
+.header-contacts {
+  display: none;
+}
+.menu-open-btn {
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: absolute;
+  background-color: $btn-color;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
 
 // .header {
 //   border-bottom-width: 1px;
