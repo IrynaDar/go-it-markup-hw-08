@@ -54,13 +54,10 @@ ul {
 }
 
 .container {
-  /*width: 1200px;*/
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /*display: flex;*/
-  /*align-items: center;*/
 }
 
 @media screen and (min-width: 480px) {
@@ -303,6 +300,62 @@ line-height: 1.19;*/
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-contacts {
+  display: none;
+}
+
+.menu-open-btn {
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: absolute;
+  background-color: #FFFFFF;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #FFFFFF;
+  border: none;
+  display: block;
+  margin-left: auto;
+  fill: #2F303A;
+}
+
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: #2196F3;
+}
+
+.mob-menu-list {
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 span.header-nav__logo--color {
@@ -900,6 +953,13 @@ span.footer__logo--color {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .socials__title {
+    text-align: left;
+  }
 }
 
 .footer-continfo {
@@ -934,6 +994,8 @@ span.footer__logo--color {
   .socials {
     display: inline-block;
     margin: 0;
+    max-width: 206px;
+    margin-left: 70px;
   }
 }
 
@@ -1004,7 +1066,7 @@ span.footer__logo--color {
   }
 }
 
-.footer-form__block .footer-form__input {
+.footer-form__input {
   margin: 20px 0;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1026,12 +1088,12 @@ span.footer__logo--color {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form__block .footer-form__input:hover::placeholder, .footer-form__block .footer-form__input:focus::placeholder {
+.footer-form__input:hover::placeholder, .footer-form__input:focus::placeholder {
   color: #2196F3;
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-form__block .footer-form__input {
+  .footer-form__input {
     margin-right: 12px;
   }
 }
@@ -1090,14 +1152,22 @@ span.footer__logo--color {
 }
 
 .portfolio-info {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-info {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__container {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
 }
 
 .main-btn {
@@ -1129,8 +1199,9 @@ span.footer__logo--color {
 
 .button-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  /*margin-bottom: 50px;*/
+  /*justify-content: center;*/
 }
 
 .btn-top:not(:last-child) {
