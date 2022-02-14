@@ -11,9 +11,10 @@
   transform: scale(0.5) skew(30deg);
 }
 .modal {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
+  z-index: 1;
   transform: translate(-50%, -50%) scale(1) skew(0);
   transition: transform 500ms;
   width: 450px;
@@ -21,10 +22,9 @@
   background-color: $btn-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  @media screen and (min-width:768px) and (max-width: 1199px) {
+  @media screen and (min-width:1200px) {
     width: 528px;
     min-height: 581px;
-    
   }
 }
 .modal-close {
@@ -54,9 +54,11 @@
   visibility: hidden;
 }
 .modal-title {
+  display: block;
+  text-align: center;
   margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 12px;
   width: 448px;
   height: 23px;
@@ -64,8 +66,12 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+}
+.callback-form {
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  justify-content: center;
+  }
 }
 .form-field {
   margin-bottom: 10px;
@@ -74,7 +80,7 @@
   position: relative;
 }
 .form-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   padding-left: 42px;
   margin-left: 40px;
@@ -91,6 +97,10 @@
         fill: $accent-color;
 }
 }
+@media screen and (min-width: 1200px) {
+      width: 448px;
+  
+    }
 }
 .input-icon {
   display: block;
@@ -102,7 +112,8 @@
 }
 
 .input-text {
-  display: block;
+  display: flex;
+  text-align: center;
   margin-left: 40px;
   margin-bottom: 4px;
   font-family: inherit;
@@ -112,7 +123,7 @@
   color: $second-text-color;
 }
 .form-text {
-  width: 448px;
+  width: 370px;
   height: 120px;
   margin-left: 40px;
   margin-right: 40px;
@@ -132,9 +143,15 @@
       border-color: $accent-color;
       cursor: pointer;
 }
+@media screen and (min-width: 1200px) {
+      width: 448px;
+    }
+}
+.form-field-check {
+  display: flex;
+  justify-content: center;
 }
 .check-text {
-  left: 52px;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
@@ -154,7 +171,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.policy-check {
+  width: 370px;
+  @media screen and (min-width: 1200px) {
+      width: 448px;
+    }
 }
 .policy-check:checked + .check-text span {
   border: none;
@@ -178,6 +202,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 31px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:hover, &:focus {
       background-color: $back-color;
