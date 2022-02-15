@@ -52,7 +52,8 @@
       margin-right: 30px;
     }
   }
-  .clients-list__link {
+}
+.clients-list__link {
     max-width: 170px;
     height: 92px;
     border: 1px solid $icon-color;
@@ -67,15 +68,19 @@
     &:hover,
     &:focus {
       border-color: $accent-color;
-      &.client-icon {
+       &:hover > .clients-list__icon,
+        &:focus > .clients-list__icon {
         fill: $accent-color;
       }
     }
-  }
+}
   .clients-list__icon {
     fill: $icon-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    &:hover, &:focus {
+              fill: $accent-color;
+      }
 }
+

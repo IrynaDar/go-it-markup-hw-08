@@ -120,18 +120,16 @@ margin-left: 10px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:hover, &:focus {
       background-color: $accent-color;
-            &.social__icon {
+      }
+            &:hover > .social__icon,
+            &:focus > .social__icon {
             fill: $btn-color;
 }
-}
-
 }
 .social__icon {
   fill: $icon-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
-      fill: $btn-color;
-  }
+  
 }
