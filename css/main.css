@@ -370,11 +370,19 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__container {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -503,28 +511,37 @@ span.logo--color {
     justify-content: center;
     align-items: center;
     margin-bottom: 0px;
-    margin-left: 30px;
+  }
+  .header-mail:not(:last-child),
+  .header-tel:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 768px) {
+.header-mail__link,
+.header-tel__link {
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-mail__link:hover, .header-mail__link:focus,
+.header-tel__link:hover,
+.header-tel__link:focus {
+  color: #2196F3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-mail__link,
   .header-tel__link {
-    font-family: inherit;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #757575;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header-mail__link:hover, .header-mail__link:focus,
-  .header-tel__link:hover,
-  .header-tel__link:focus {
-    color: #2196F3;
+    display: flex;
   }
 }
 
@@ -544,6 +561,7 @@ span.logo--color {
 @media screen and (min-width: 768px) {
   .header-mail__icon {
     margin-right: 10px;
+    display: flex;
     fill: #757575;
     transition-property: fill;
     transition-duration: 250ms;
@@ -554,9 +572,16 @@ span.logo--color {
   }
 }
 
+@media screen and (min-with: 1200px) {
+  .header-mail__icon {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-tel__icon {
     fill: #757575;
+    display: flex;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -566,9 +591,9 @@ span.logo--color {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-with: 1200px) {
   .header-tel__icon {
-    margin-right: 10px;
+    display: flex;
   }
 }
 

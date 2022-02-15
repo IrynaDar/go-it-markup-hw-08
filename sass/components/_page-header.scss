@@ -14,12 +14,15 @@
     padding-top: 16px;
     padding-bottom: 16px;
     }
-    @media screen and (min-width: 768px) (max-width: 1199px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
     @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     }
@@ -122,13 +125,13 @@ bottom: -32px;
   justify-content: center;
   align-items: center;
   margin-bottom: 0px;
-  margin-left: 30px;
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
   } 
 }
 .header-mail__link,
   .header-tel__link {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
     font-family: inherit;
     font-weight: 500;
     font-style: normal;
@@ -142,7 +145,9 @@ bottom: -32px;
     &:hover, &:focus {
       color: $accent-color;
     }
-  }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    }
   @media screen and (min-with: 1200px) {
   display: flex;
   justify-content: center;
@@ -164,6 +169,9 @@ bottom: -32px;
       fill: $accent-color;
     }
 }
+@media screen and (min-with: 1200px) { 
+  display: flex;
+}
 }
 
 .header-tel__icon {
@@ -177,9 +185,9 @@ bottom: -32px;
       fill: $accent-color;
     }
   }
-  @media screen and (min-width: 1200px) {
-    margin-right: 10px;
-  }
+  @media screen and (min-with: 1200px) { 
+  display: flex;
+}
 }
 
 .header-mail__link:hover .header-mail__icon,
