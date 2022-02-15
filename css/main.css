@@ -1181,10 +1181,9 @@ span.logo--color {
 
 .social__link:hover, .social__link:focus {
   background-color: #2196F3;
-  fill: #FFFFFF;
 }
 
-.social__link:hover.team-soc-icon, .social__link:focus.team-soc-icon {
+.social__link:hover.social__icon, .social__link:focus.social__icon {
   fill: #FFFFFF;
 }
 
@@ -1193,6 +1192,10 @@ span.logo--color {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon:hover, .social__icon:focus {
+  fill: #FFFFFF;
 }
 
 .clients {
@@ -1591,7 +1594,7 @@ span.footer__logo--color {
 }
 
 .main-btn {
-  font: inherit;
+  font-style: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1620,6 +1623,12 @@ span.footer__logo--color {
 .button-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .button-list {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1679,7 +1688,6 @@ span.footer__logo--color {
 
 @media screen and (min-width: 1200px) {
   .asign {
-    height: 110px;
     max-width: 370px;
   }
 }

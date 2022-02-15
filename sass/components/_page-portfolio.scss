@@ -13,7 +13,7 @@
   justify-content: center;
 }
 .main-btn {
-  font: inherit;
+  font-style: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -39,6 +39,9 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (min-width:768px) and (max-width:1199px) {
+    justify-content: center;
+  }
   @media screen and (min-width:1200px) {
     margin-bottom: 50px;
     justify-content: center;
@@ -81,9 +84,7 @@ color: $second-text-color;
     height: 146px;
   }
   @media screen and (min-width: 1200px) {
-    height: 110px;
-    max-width: 370px;
-  }
+    max-width: 370px;  }
 }
 .portflio-list {
   display: flex;
