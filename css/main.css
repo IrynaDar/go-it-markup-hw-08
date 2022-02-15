@@ -342,7 +342,7 @@ ul {
 }
 
 .link-policy {
-  color: var(--accent-color);
+  color: #2196F3;
 }
 
 .header {
@@ -1181,6 +1181,7 @@ span.logo--color {
 
 .social__link:hover, .social__link:focus {
   background-color: #2196F3;
+  fill: #FFFFFF;
 }
 
 .social__link:hover.team-soc-icon, .social__link:focus.team-soc-icon {

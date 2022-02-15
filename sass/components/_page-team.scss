@@ -120,6 +120,7 @@ margin-left: 10px;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       &:hover, &:focus {
       background-color: $accent-color;
+      fill: $btn-color;
             &.team-soc-icon {
             fill: $btn-color;
 }
