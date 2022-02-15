@@ -18,35 +18,75 @@
 
 <body>
     <!--шапка сайта-->
-    <!-- <div class="container container__header">
-                <nav class="header-nav">
-                    <a class="link logo header-nav__logo" href="">Web<span class="header-nav__logo--color">Studio</span></a>
-                    <ul class="list header-list">
-                        <li class="header-list__item"> <a class="header-list__link current" href="">Студия</a></li>
-                        <li class="header-list__item"><a class="header-list__link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="header-list__item"><a class="header-list__link" href="">Контакты</a></li>
+    <header class="header">
+        <div class="container header__container">
+            <a class="link header__logo logo" href="">Web<span class="logo--color">Studio</span></a>
+            <div class="header-blocks">
+                <div class="header-box">
+                    <nav class="header-nav">
+                        <ul class="list header-list">
+                            <li class="header-list__item"> <a class="header-list__link current" href="">Студия</a></li>
+                            <li class="header-list__item"><a class="header-list__link" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="header-list__item"><a class="header-list__link" href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-box">
+                    <ul class="header-contacts">
+                        <li class="list header-mail">
+                            <a class="header-mail__link" href="mailto:info@example.com"> <svg class="header-mail__icon"
+                                    width="16" height="12">
+                                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                                </svg> info@example.com</a>
+                        </li>
+                        <li class="list header-tel">
+                            <a class="header-tel__link" href="tel:+380991111111">
+                                <svg class="header-tel__icon" width="10" height="16">
+                                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                                </svg> +38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="header__open-btn" data-menu-open>
+                <svg height="26" width="24">
+                    <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+        </div>
+        <!--ВИПАД МЕНЮ-->
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="mob-menu__close-btn" data-menu-close>
+                <svg height="40" width="40">
+                    <use href="./images/symbol-defs.svg#icon-menu-close"></use>
+                </svg></button>
+            </button>
+            <div class="mobile-header">
+                <nav class=" list mob-menu-list">
+                    <li class="mob-menu-list__item"> <a class="link mob-menu-list__link" href="./index.html">Студия</a></li>
+                    <li class="mob-menu-list__item"><a class="link mob-menu-list__link current"
+                            href="">Портфолио</a></li>
+                    <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="">Контакты</a></li>
                     </ul>
                 </nav>
-                <ul class="header-contacts">
-                    <li class="list header-mail">
-                        <a class="header-mail__link" href="mailto:info@example.com"> <svg class="header-mail__icon" width="16" height="12">
-                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                            </svg> info@example.com</a>
+                <ul class="mob-contacts">
+                    <li class="list mob-tel">
+                        <a class="link mob-tel__link current" href="tel:+380991111111"></use></svg> +38 099 111 11 11</a>
                     </li>
-                    <li class="list header-tel">
-                        <a class="header-tel__link" href="tel:+380991111111">
-                            <svg class="header-tel__icon" width="10" height="16">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg> +38 099 111 11 11</a>
+                    <li class="list mob-mail">
+                        <a class="link mob-mail__link" href="mailto:info@example.com"></use></svg> info@example.com</a>
                     </li>
                 </ul>
-                </div> -->
-    <a class="link logo header-nav__logo" href="">Web<span class="header-nav__logo--color">Studio</span></a>
-    <div class="burger-menu" id="burgerMenu" onclick="open-menu">
-        <svg class="advant-class__icon--menu-open" height="26" width="24">
-            <use href="./images/symbol-defs.svg#icon-menu-open"></use>
-        </svg>
-    </div>
+                <ul class="mob-menu__socials">
+                    <li class="list mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Instagram</a>
+                    </li>
+                    <li class="list mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Twitter</a></li>
+                    <li class="list mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Facebook</a></li>
+                    <li class="list mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Linkedin</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <!--портфолио-->
 <main class="portfolio">

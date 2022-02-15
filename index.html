@@ -17,10 +17,10 @@
 <body>
     <!--шапка сайта-->
     <header class="header">
-        <div class="container container__header">
+        <div class="container header__container">
             <a class="link header__logo logo" href="">Web<span class="logo--color">Studio</span></a>
             <div class="header-blocks">
-            <div class="header-box">
+                <div class="header-box">
                 <nav class="header-nav">
                 <ul class="list header-list">
                     <li class="header-list__item"> <a class="header-list__link current" href="">Студия</a></li>
@@ -28,8 +28,8 @@
                     <li class="header-list__item"><a class="header-list__link" href="">Контакты</a></li>
                 </ul>
                 </nav>
-            </div>
-            <div class="head-block">
+                </div>
+                <div class="header-box">
                 <ul class="header-contacts">
                 <li class="list header-mail">
                     <a class="header-mail__link" href="mailto:info@example.com"> <svg class="header-mail__icon" width="16" height="12">
@@ -43,17 +43,18 @@
                         </svg> +38 099 111 11 11</a>
                 </li>
                 </ul>
+                </div>
             </div>
-            </div>
-            <button type="button" class="menu-open-btn" data-menu-open>
-                <svg class="advant-class__icon--menu-open" height="26" width="24">
+            <button type="button" class="header__open-btn" data-menu-open>
+                <svg height="26" width="24">
                     <use href="./images/symbol-defs.svg#icon-menu-open"></use>
                 </svg>
             </button>
+        </div>
             <!--ВИПАД МЕНЮ-->
             <div class="mob-menu is-hidden" data-menu>
-                <button type="button" class="menu-close-btn" data-menu-close>
-                <svg class="advant-class__icon--menu-close" height="40" width="40">
+                <button type="button" class="mob-menu__close-btn" data-menu-close>
+                <svg height="40" width="40">
                     <use href="./images/symbol-defs.svg#icon-menu-close"></use>
                 </svg></button>
                 </button>
@@ -80,7 +81,6 @@
                 </ul>
                 </div>
             </div> 
-        </div>
     </header>
         <!--герой---->
             <section class="hero">
