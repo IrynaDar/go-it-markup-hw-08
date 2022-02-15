@@ -76,6 +76,7 @@ color: $second-text-color;
   border: 1px solid $border-color;
   box-sizing: border-box;
   padding: 20px 24px;
+  height: 110px;
   @media screen and (min-width:768px) and (max-width:1199px) {
     height: 146px;
   }
@@ -102,6 +103,9 @@ color: $second-text-color;
 }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc(100% / 2 - 60px);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     margin-right: 30px;
     &:nth-child(2n) {
       margin-right: 0;
