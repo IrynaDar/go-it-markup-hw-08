@@ -374,6 +374,7 @@ ul {
   .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -385,6 +386,7 @@ ul {
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    justify-content: space-between;
   }
 }
 
