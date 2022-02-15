@@ -1670,8 +1670,15 @@ span.footer__logo--color {
   padding: 20px 24px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .asign {
+    height: 146px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .asign {
+    height: 110px;
     max-width: 370px;
   }
 }
@@ -1703,8 +1710,8 @@ span.footer__logo--color {
   .port-project:nth-child(2n) {
     margin-right: 0;
   }
-  .port-project:nth-child(n + 3) {
-    margin-bottom: 0px;
+  .port-project:nth-child(n+9) {
+    margin-bottom: 0;
   }
 }
 
