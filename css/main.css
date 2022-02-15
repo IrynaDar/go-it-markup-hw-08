@@ -520,6 +520,7 @@ span.logo--color {
 
 .header-mail__link,
 .header-tel__link {
+  display: flex;
   font-family: inherit;
   font-weight: 500;
   font-style: normal;
@@ -582,6 +583,7 @@ span.logo--color {
   .header-tel__icon {
     fill: #757575;
     display: flex;
+    margin-right: 10px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -132,6 +132,7 @@ bottom: -32px;
 }
 .header-mail__link,
   .header-tel__link {
+    display: flex;
     font-family: inherit;
     font-weight: 500;
     font-style: normal;
@@ -178,6 +179,7 @@ bottom: -32px;
   @media screen and (min-width: 768px) {
   fill: $second-text-color;
   display: flex;
+  margin-right: 10px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
