@@ -18,16 +18,19 @@
     <!--шапка сайта-->
     <header class="header">
         <div class="container container__header">
-            <div class="tab-header">
-            <nav class="header-nav">
-                <a class="link logo header-nav__logo" href="">Web<span class="header-nav__logo--color">Studio</span></a>
+            <a class="link header__logo logo" href="">Web<span class="logo--color">Studio</span></a>
+            <div class="header-blocks">
+            <div class="header-box">
+                <nav class="header-nav">
                 <ul class="list header-list">
                     <li class="header-list__item"> <a class="header-list__link current" href="">Студия</a></li>
                     <li class="header-list__item"><a class="header-list__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="header-list__item"><a class="header-list__link" href="">Контакты</a></li>
                 </ul>
-            </nav>
-            <ul class="header-contacts">
+                </nav>
+            </div>
+            <div class="head-block">
+                <ul class="header-contacts">
                 <li class="list header-mail">
                     <a class="header-mail__link" href="mailto:info@example.com"> <svg class="header-mail__icon" width="16" height="12">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -39,16 +42,22 @@
                             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                         </svg> +38 099 111 11 11</a>
                 </li>
-            </ul>
+                </ul>
             </div>
-            <div class="mobile-header">
-            <a class="link logo header-nav__logo" href="">Web<span class="header-nav__logo--color">Studio</span></a>
+            </div>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="advant-class__icon--menu-open" height="26" width="24">
+                    <use href="./images/symbol-defs.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+            <!--ВИПАД МЕНЮ-->
             <div class="mob-menu is-hidden" data-menu>
                 <button type="button" class="menu-close-btn" data-menu-close>
                 <svg class="advant-class__icon--menu-close" height="40" width="40">
                     <use href="./images/symbol-defs.svg#icon-menu-close"></use>
                 </svg></button>
                 </button>
+                <div class="mobile-header">
                 <nav class=" list mob-menu-list">
                         <li class="mob-menu-list__item"> <a class="link mob-menu-list__link current" href="">Студия</a></li>
                         <li class="mob-menu-list__item"><a class="link mob-menu-list__link" href="./portfolio.html">Портфолио</a></li>
@@ -69,13 +78,8 @@
                     <li class="list mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Facebook</a></li>
                     <li class="list mob-menu__socials-item"><a href="" class="link mob-menu__socials-link">Linkedin</a></li>
                 </ul>
+                </div>
             </div> 
-            <button type="button" class="menu-open-btn" data-menu-open>
-                <svg class="advant-class__icon--menu-open" height="26" width="24">
-                    <use href="./images/symbol-defs.svg#icon-menu-open"></use>
-                </svg>
-            </button>
-            </div>
         </div>
     </header>
         <!--герой---->

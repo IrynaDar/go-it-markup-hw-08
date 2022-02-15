@@ -85,12 +85,17 @@ ul {
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  /*font-size: 26px;
-line-height: 1.19;*/
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media screen and (min-weight: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .backdrop {
@@ -345,29 +350,57 @@ line-height: 1.19;*/
   height: 60px;
 }
 
-.container__header {
+.header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.tab-header {
-  display: none;
+  max-height: 80px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tab-header {
-    padding-top: 12px;
-    display: flex;
-    margin-right: auto;
-    justify-content: space-around;
-    align-items: center;
+  .header__container {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .tab-header {
+  .header__container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+span.logo--color {
+  color: #212121;
+}
+
+@media screen and (max-width: 767px) {
+  .header-blocks {
+    display: none;
+  }
+}
+
+.header-blocks {
+  display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-blocks {
+    width: 100%;
+    display: contents;
     display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-blocks {
+    /*display: flex;*/
   }
 }
 
@@ -471,10 +504,6 @@ line-height: 1.19;*/
     left: 0;
     bottom: -32px;
   }
-}
-
-span.header-nav__logo--color {
-  color: #212121;
 }
 
 .mob-contacts {
@@ -876,7 +905,12 @@ span.header-nav__logo--color {
   color: #212121;
   margin-bottom: 10px;
   margin-top: 30px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .list__item .advant-class__title {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -980,7 +1014,6 @@ span.header-nav__logo--color {
 }
 
 .team-list {
-  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -991,14 +1024,23 @@ span.header-nav__logo--color {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-list {
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+  }
+}
+
 .team-list__team-item {
   display: block;
   width: 100%;
   /*width: 270px;*/
 }
 
-.team-list__team-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team-list__team-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1016,9 +1058,9 @@ span.header-nav__logo--color {
 
 @media screen and (min-width: 1200px) {
   .team-list__team-item {
-    margin-bottom: 0px;
     width: calc(100% / 4 - 30px);
     margin-right: 30px;
+    margin-bottom: 0px;
   }
   .team-list__team-item:nth-child(4n) {
     margin-right: 0px;

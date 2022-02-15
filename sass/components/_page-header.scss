@@ -3,33 +3,62 @@
   height: 60px;
 }
 .container__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.tab-header {
-  display: none;
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 12px;
     display: flex;
-    margin-right: auto;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
     }
     @media screen and (min-width: 1200px) {
-      display: flex;
+        padding-top: 24px;
+        padding-bottom: 25px;
     }
 }
-.mobile-header {
+
+span.logo--color {
+  color: $text-color;
+}
+.header-blocks {
+  @media screen and (max-width: 767px) {
+  display:none; 
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-  width: 100%;
-    @media screen and (min-width: 768px) {
+  }
+}
+.header-blocks {
     display: none;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 100%;
+        display: contents;
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1200px) {
+      /*display: flex;*/
     }
 }
+.menu-open-btn {
+    margin-left: auto;
+    background-color: #ffffff;
+    border: none;
+    &:hover, &:focus {
+        fill: var(--main-color);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
 .mob-menu {
   position: absolute;
   background-color: $btn-color;
@@ -46,6 +75,18 @@
     }
     @media screen and (min-width: 1200px) {
         display: none;
+    }
+}
+
+
+/*.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+    @media screen and (min-width: 768px) {
+    display: none;
     }
 }
 
@@ -102,10 +143,6 @@ left: 0;
 bottom: -32px;
 }
 }
-}
-
-span.header-nav__logo--color {
-  color: $text-color;
 }
 .mob-contacts {
   padding-left: 40px;
