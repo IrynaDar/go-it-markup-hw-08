@@ -117,7 +117,7 @@ bottom: -32px;
 }
 .header-mail,
 .header-tel {
-  @media screen and (min-with: 767px) and (max-width: 1199px){
+  @media screen and (min-with: 768px) and (max-width: 1199px){
   &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -131,6 +131,11 @@ bottom: -32px;
       margin-right: 30px;
     }
   } 
+}
+.header-mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+    }
 }
 .header-mail__link,
   .header-tel__link {
