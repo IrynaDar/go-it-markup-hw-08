@@ -47,6 +47,7 @@ span.logo--color {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
   @media screen and (min-width: 1200px) {
         margin-left: 93px;
     }
@@ -90,16 +91,23 @@ bottom: -32px;
 }
 }
 }
+.header-contacts {
+    @media screen and (min-with: 1200px) {
+    display: flex;
+  }
+}
 .header-mail,
 .header-tel {
+  @media screen and (min-with: 767px) and (max-width: 1199px){
   &:not(:last-child) {
       margin-bottom: 10px;
     }
+  }
   @media screen and (min-with: 1200px) {
   display: flex;
-  margin-left: auto;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
   } 
 }
 .header-mail__link,
@@ -112,8 +120,6 @@ bottom: -32px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: $second-text-color;
-    /*display: flex ;
-    justify-content: center;*/
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -121,10 +127,17 @@ bottom: -32px;
       color: $accent-color;
     }
   }
+  @media screen and (min-with: 1200px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  } 
 }
 .header-mail__icon {
   @media screen and (min-width: 768px) {
-  /*display: flex;*/
   margin-right: 10px;
   fill: $second-text-color;
   transition-property: fill;
@@ -138,7 +151,6 @@ bottom: -32px;
 
 .header-tel__icon {
   @media screen and (min-width: 768px) {
-  /*display: flex;*/
   fill: $second-text-color;
   transition-property: color;
   transition-duration: 250ms;
@@ -146,11 +158,10 @@ bottom: -32px;
     &:hover, &:focus {
       fill: $accent-color;
     }
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
-    margin-left: 30px;
   }
-}
 }
 
 .header-mail__link:hover .header-mail__icon,
@@ -160,14 +171,6 @@ bottom: -32px;
   @media screen and (min-width: 768px) {
   fill: $accent-color;
 }
-}
-.header-contacts {
-  @media screen and (min-with: 1200px) {
-  display: flex;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
-  }
 }
 
 .mob-menu {

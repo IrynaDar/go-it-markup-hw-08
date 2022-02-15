@@ -413,6 +413,7 @@ span.logo--color {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -464,18 +465,26 @@ span.logo--color {
   }
 }
 
-.header-mail:not(:last-child),
-.header-tel:not(:last-child) {
-  margin-bottom: 10px;
+@media screen and (min-with: 1200px) {
+  .header-contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-with: 767px) and (max-width: 1199px) {
+  .header-mail:not(:last-child),
+  .header-tel:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-with: 1200px) {
   .header-mail,
   .header-tel {
     display: flex;
-    margin-left: auto;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
   }
 }
 
@@ -489,8 +498,6 @@ span.logo--color {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
-    /*display: flex ;
-    justify-content: center;*/
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -502,9 +509,21 @@ span.logo--color {
   }
 }
 
+@media screen and (min-with: 1200px) {
+  .header-mail__link,
+  .header-tel__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-mail__link:not(:last-child),
+  .header-tel__link:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-mail__icon {
-    /*display: flex;*/
     margin-right: 10px;
     fill: #757575;
     transition-property: fill;
@@ -518,7 +537,6 @@ span.logo--color {
 
 @media screen and (min-width: 768px) {
   .header-tel__icon {
-    /*display: flex;*/
     fill: #757575;
     transition-property: color;
     transition-duration: 250ms;
@@ -529,10 +547,9 @@ span.logo--color {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .header-tel__icon {
     margin-right: 10px;
-    margin-left: 30px;
   }
 }
 
@@ -542,15 +559,6 @@ span.logo--color {
   .header-tel__link:hover .header-tel__icon,
   .header-tel__link:focus .header-tel__icon {
     fill: #2196F3;
-  }
-}
-
-@media screen and (min-with: 1200px) {
-  .header-contacts {
-    display: flex;
-    margin-left: auto;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -1357,7 +1365,7 @@ span.footer__logo--color {
 
 .socials-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .socials-list__item {
