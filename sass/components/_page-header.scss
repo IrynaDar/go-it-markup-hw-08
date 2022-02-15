@@ -14,12 +14,14 @@
     padding-top: 16px;
     padding-bottom: 16px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) (max-width: 1199px){
       display: flex;
       align-items: center;
       justify-content: space-around;
-      padding-top: 32px;
-      padding-bottom: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
     }
 }
 
@@ -125,7 +127,8 @@ bottom: -32px;
 }
 .header-mail__link,
   .header-tel__link {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
     font-family: inherit;
     font-weight: 500;
     font-style: normal;
@@ -152,6 +155,7 @@ bottom: -32px;
 .header-mail__icon {
   @media screen and (min-width: 768px) {
   margin-right: 10px;
+  display: flex;
   fill: $second-text-color;
   transition-property: fill;
   transition-duration: 250ms;
@@ -165,6 +169,7 @@ bottom: -32px;
 .header-tel__icon {
   @media screen and (min-width: 768px) {
   fill: $second-text-color;
+  display: flex;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
