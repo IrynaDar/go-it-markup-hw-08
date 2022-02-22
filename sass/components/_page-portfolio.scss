@@ -39,8 +39,12 @@
 .button-list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width:767px) {
+    margin-bottom: 25px;
+  }
   @media screen and (min-width:768px) and (max-width:1199px) {
     justify-content: center;
+    margin-bottom: 30px;
   }
   @media screen and (min-width:1200px) {
     margin-bottom: 50px;
@@ -49,8 +53,8 @@
 }
 .btn-top {
   margin-bottom: 15px;
-  @media screen and (min-width:768px) and (max-width:1199px) {
-    margin-bottom: 30px;
+  @media screen and (min-width:768px) {
+  margin-bottom: 0px;
   }
 }
 .btn-top:not(:last-child) {
@@ -74,7 +78,7 @@ letter-spacing: 0.03em;
 color: $second-text-color;
 }
 .asign {
-  width: 100%;
+  max-width: 450px;
   background-color: $btn-color;
   border: 1px solid $border-color;
   box-sizing: border-box;
@@ -82,17 +86,16 @@ color: $second-text-color;
   height: 110px;
   @media screen and (min-width:768px) and (max-width:1199px) {
     height: 146px;
+    width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 370px;  }
+    width: 370px;
+    height: 110px;  }
 }
 .portflio-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  justify-content: start;
-  }
   }
 
 .port-project {
@@ -106,7 +109,7 @@ color: $second-text-color;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc(100% / 2 - 60px);
+    width: calc(100% / 2 - 30px);
     display: flex;
     flex-wrap: wrap;
     margin-right: 30px;
@@ -118,7 +121,7 @@ color: $second-text-color;
     }
   }
   @media screen and (min-width:1200px) {
-    width: calc(100% / 3 - 60px);
+    width: calc(100% / 3 - 30px);
     margin-bottom: 30px;
     margin-right: 30px;
     &:nth-child(3n) {

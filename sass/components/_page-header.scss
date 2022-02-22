@@ -1,15 +1,13 @@
 .header {
   border: 1px solid $bottom-border-color;
   @media screen and (max-width: 767px) {
-  height: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    height: 80px;
+  max-height: 80px;
   }
 }
 .header__container {
     @media screen and (max-width: 767px) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -44,7 +42,8 @@ span.logo--color {
     }
 }
 .header__open-btn {
-    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     background-color: $btn-color;
     border: none;
     &:hover, &:focus {
@@ -214,8 +213,8 @@ bottom: -32px;
   background-color: $btn-color;
   top: 0px;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -228,19 +227,20 @@ bottom: -32px;
     }
 }
 .mobile-header {
-  display: block;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-top: 15px;
   width: 100%;
+  height: 100%;
     @media screen and (min-width: 768px) {
     display: none;
     }
 }
+
 .mob-menu__close-btn{
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 21px;
+    right: 21px;
     background-color: $btn-color;
     border: none;
     display: block;
@@ -252,10 +252,11 @@ bottom: -32px;
 }
 .mob-menu__socials {
     margin-bottom: 48px;
+    margin-left: 40px;
+    margin-top: 64px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 40px;
     color: $accent-color;
 }
 .mob-menu__socials-item {
@@ -278,8 +279,8 @@ bottom: -32px;
   color: $accent-color;
 }
 .mob-contacts {
+  margin-top: auto;
   padding-left: 40px;
-  padding-bottom: 134px;
 }
 .mob-tel {
 margin-bottom: 32px;
