@@ -95,7 +95,9 @@ color: $second-text-color;
 .portflio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
   }
 
 .port-project {
