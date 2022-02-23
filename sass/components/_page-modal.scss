@@ -54,22 +54,29 @@
   visibility: hidden;
 }
 .modal-title {
-  display: block;
   text-align: center;
   margin-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 12px;
-  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
   height: 23px;
   font-family: inherit;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
+  width: 370px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1.15; 
+    width: 448px;
+    display: flex;
+    justify-content: center;
+  }
 }
 .callback-form {
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
   justify-content: center;
   }
 }
@@ -150,17 +157,29 @@
 .form-field-check {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 370px;
+  margin-left: 43px;
+  @media screen and (min-width: 1200px) {
+      width: 448px;
+      margin-left: 52px;
+    }
 }
 .check-text {
   font-family: inherit;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: $second-text-color;
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom:30px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
 }
 .check-text span {
   width: 16px;
