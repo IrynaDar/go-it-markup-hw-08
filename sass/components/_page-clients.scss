@@ -47,7 +47,7 @@
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 30px;
-    width: calc(100% / 3 - 15px);
+    width: calc(100% / 3 - 30px);
     &:nth-child(3n) {
       margin-right: 0px;
     }

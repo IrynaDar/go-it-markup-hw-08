@@ -21,6 +21,7 @@
   letter-spacing: 0.03em;
   background-color: $second-back-color;
   color: $text-color;
+  border:none;
   border-radius: 4px;
   padding: 6px 22px;
   transition-property: background-color box-shadow color;
@@ -53,6 +54,11 @@
 }
 .btn-top {
   margin-bottom: 15px;
+  @media screen and (max-width:767px) {
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+  }
   @media screen and (min-width:768px) {
   margin-bottom: 0px;
   }
@@ -101,9 +107,10 @@ color: $second-text-color;
   }
 
 .port-project {
-  width:100%;
   margin-right: 0px;
-  margin-bottom: 30px;
+  &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,7 +118,7 @@ color: $second-text-color;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     display: flex;
     flex-wrap: wrap;
     margin-right: 30px;
@@ -124,12 +131,14 @@ color: $second-text-color;
   }
   @media screen and (min-width:1200px) {
     width: calc(100% / 3 - 30px);
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     margin-right: 30px;
     &:nth-child(3n) {
   margin-right: 0px;
 }
-      &:nth-child(n + 6) {
+      &:nth-child(n + 7) {
   margin-bottom: 0;
 }
   }

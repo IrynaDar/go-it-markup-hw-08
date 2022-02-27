@@ -1317,7 +1317,7 @@ span.logo--color {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list__item {
     margin-right: 30px;
-    width: calc(100% / 3 - 15px);
+    width: calc(100% / 3 - 30px);
   }
   .clients-list__item:nth-child(3n) {
     margin-right: 0px;
@@ -1707,6 +1707,7 @@ span.footer__logo--color {
   letter-spacing: 0.03em;
   background-color: #F5F4FA;
   color: #212121;
+  border: none;
   border-radius: 4px;
   padding: 6px 22px;
   transition-property: background-color box-shadow color;
@@ -1752,6 +1753,12 @@ span.footer__logo--color {
 
 .btn-top {
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-top:nth-child(n + 4) {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1818,12 +1825,14 @@ span.footer__logo--color {
 }
 
 .port-project {
-  width: 100%;
   margin-right: 0px;
-  margin-bottom: 30px;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.port-project:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .port-project:hover, .port-project:focus {
@@ -1832,7 +1841,7 @@ span.footer__logo--color {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .port-project {
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 15px);
     display: flex;
     flex-wrap: wrap;
     margin-right: 30px;
@@ -1848,13 +1857,15 @@ span.footer__logo--color {
 @media screen and (min-width: 1200px) {
   .port-project {
     width: calc(100% / 3 - 30px);
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     margin-right: 30px;
   }
   .port-project:nth-child(3n) {
     margin-right: 0px;
   }
-  .port-project:nth-child(n + 6) {
+  .port-project:nth-child(n + 7) {
     margin-bottom: 0;
   }
 }
